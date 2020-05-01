@@ -1,18 +1,35 @@
-* {
-    box-sizing: border-box;
+.leftside, .rightside{
+  height: 50vh;
+  width: 100%;
+}
+@media screen and (min-width:768px)
+{
+  .leftside, .rightside{
+    height: 100vh;
   }
+}
+.leftside{
+  background-color: #f6f6f6;
+}
+.rightside{
+  background-color: #f6f6f6;
+}
+.carina{
+  object-fit: contain;
+  height: 100%;
+
+}
+.navbar, .navbar-brand{
+  /* color:black; */
+  text-transform: uppercase;
+  /* font-size: medium; */
+  text-rendering: optimizeLegibility;
+    color: #f75e25;
+    letter-spacing: .10em;
+    font-size: larger;
+    font-weight:400;
+}
+.body{
+  font-family: 'Source Sans Pro', sans-serif;
   
-  /* Create two equal columns that floats next to each other */
-  .column {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+}
